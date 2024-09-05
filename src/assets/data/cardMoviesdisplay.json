@@ -1,0 +1,17 @@
+ 
+[ 
+      {
+       "ImageURL": "../../../assets/images/card.jpg",
+       "title" : "Card #1 Title",
+       "text": "This is a longer movies.",
+       "button" : "Trailer"
+      },
+      
+      {
+        "ImageURL": "../../../assets/images/card.jpg",
+        "title" :" Card #2 Title",
+        "text" : "movies description",
+        "button" : "Trailer"
+      }
+     
+ ]

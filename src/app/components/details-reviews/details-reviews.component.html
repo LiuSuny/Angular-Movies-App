@@ -1,0 +1,54 @@
+<div class="accordion" id="accordionExample" *ngFor="let review of movieReview; let i=index">
+    <div class="accordion-item">
+      <h2 class="accordion-header" >
+        <button class="accordion-button collapsed" type="button" 
+        data-bs-toggle="collapse" [attr.data-bs-target]="'#collapseOne' + i"
+         aria-expanded="true" [attr.aria-controls]="'collapseOne' + i">
+          <i class="bi bi-star"></i> <b>{{review.rate}}/10</b> Review #{{i +1 }}
+        </button>
+      </h2>
+      <div id="collapseOne{{i}}" class="accordion-collapse collapse" 
+      data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          <p>{{review.text}}</p>
+           <p class="blackquote-footer">{{review.reviewAuthor}}</p>
+           <p>
+            <i>{{review.peopleView}}</i>
+           </p>
+        </div>
+      </div>
+    </div>
+  </div>
+    <!-- <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            <i class="bi bi-star"></i> <b>8.5/10</b>Review #2
+        </button>
+      </h2>
+      <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+            <p>This is a review description section and sometime the review can be very long that why we are using an accordion</p>
+            <p class="blackquote-footer">review author</p>
+            <p>
+             <i>100 out of 120 found this useful</i>
+            </p>
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            <i class="bi bi-star"></i> <b>9.5/10</b> Review #3
+        </button>
+      </h2>
+      <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+            <p>This is a review description section and sometime the review can be very long that why we are using an accordion</p>
+            <p class="blackquote-footer">review author</p>
+            <p>
+             <i>100 out of 120 found this useful</i>
+            </p>
+        </div>
+      </div>
+    </div>
+  </div> -->
